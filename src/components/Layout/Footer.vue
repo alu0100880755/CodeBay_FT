@@ -6,6 +6,7 @@
       <div class="row footer">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-left">
           <div class="q-pa-md" align="center">
+
             <!-- Section 1 -->
             <q-list class="quick_links">
               <q-item>
@@ -16,6 +17,7 @@
 
               <q-separator inset style="max-width: 200px " />
 
+              <!-- Links -->
               <div class="links">
                 <q-item clickable v-ripple to="">
                   <q-item-section>
@@ -74,6 +76,7 @@
               <q-separator inset style="max-width: 200px " />
 
               <q-item-section>
+                <!-- Image for new content -->
                 <q-img
                   src="https://www.teknofilo.com/wp-content/uploads/2020/03/iPhone-12.jpg"
                   height="100%"
@@ -90,12 +93,14 @@
         </div>
       </div>
     </footer>
-    <!-- copyright -->
+
+    <!-- Copyright -->
     <div class="text-caption copyright text-center">
       <br/>
       {{ $t("copyright") }}
       <br/><br/>
     </div>
+
   </div>
 </template>
 
@@ -126,5 +131,10 @@ footer {
 .bold-text {
   font-weight: bold;
   font-size: 120%;
+}
+
+.copyright{
+  margin-left: 20%;
+  margin-right: 20%;
 }
 </style>

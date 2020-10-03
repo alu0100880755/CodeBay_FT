@@ -12,7 +12,8 @@
         />
 
         <q-toolbar-title>
-          CodeBay
+          <Language/>
+          <!-- CodeBay -->
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
@@ -52,7 +53,8 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
-import Footer from 'components/Index/Footer'
+import Footer from 'components/Layout/Footer'
+import Language from 'components/Layout/Language'
 
 const linksData = [
   {
@@ -101,7 +103,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink, Footer },
+  components: { EssentialLink, Footer, Language },
   data () {
     return {
       leftDrawerOpen: false,

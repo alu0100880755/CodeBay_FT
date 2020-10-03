@@ -1,19 +1,13 @@
 <template>
   <div>
     <div class="text-h4 title">
-      <h2>Mobile products</h2>
+      <h2>{{ $t("mobile_phones") }}</h2>
     </div>
     <div class="text-body1 text-justify info">
       <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
+        {{ $t("mobile_info") }}
       </p>
-    <br/>
+      <br />
     </div>
   </div>
 </template>
@@ -28,14 +22,12 @@ export default {
 </script>
 
 <style>
-
-.title{
+.title {
   margin-left: 5%;
 }
 
-.info{
+.info {
   margin-left: 5%;
   margin-right: 5%;
 }
-
 </style>
