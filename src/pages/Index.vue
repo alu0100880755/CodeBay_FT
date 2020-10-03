@@ -2,14 +2,19 @@
   <div class="Page_content">
     <!-- <q-page class="flex flex-center"> -->
 
+    <!-- Carousel -->
     <Carousel></Carousel>
+
+    <!-- Introduction -->
+    <Introinfo/>
+
+    <!-- Item list -->
     <div class="row">
     <Item
       v-for="item in available_items"
       :key="item.item_name"
       v-bind="item"
     />
-
     </div>
 
     <!-- </q-page> -->
@@ -18,12 +23,14 @@
 
 <script>
 import Carousel from '../components/Index/Carousel'
+import Introinfo from '../components/Index/Introinfo'
 import Item from '../components/Index/Item'
 
 export default {
   name: 'PageIndex',
   components: {
     Carousel,
+    Introinfo,
     Item
   },
   data () {
