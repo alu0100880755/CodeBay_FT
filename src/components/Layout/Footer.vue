@@ -19,22 +19,22 @@
 
               <!-- Links -->
               <div class="links">
-                <q-item clickable v-ripple to="">
+                <q-item clickable v-ripple to="/home">
                   <q-item-section>
                     <q-item-label>{{ $t("home") }}</q-item-label>
                   </q-item-section>
                 </q-item>
-                <q-item clickable v-ripple to="">
+                <q-item clickable v-ripple to="/event">
                   <q-item-section>
                     <q-item-label>{{ $t("event") }}</q-item-label>
                   </q-item-section>
                 </q-item>
-                <q-item clickable v-ripple to="">
+                <q-item clickable v-ripple to="/support">
                   <q-item-section>
                     <q-item-label>{{ $t("support") }}</q-item-label>
                   </q-item-section>
                 </q-item>
-                <q-item clickable v-ripple to="">
+                <q-item clickable v-ripple to="/contact">
                   <q-item-section>
                     <q-item-label>{{ $t("contact") }}</q-item-label>
                   </q-item-section>

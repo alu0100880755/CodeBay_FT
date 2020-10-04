@@ -1,6 +1,5 @@
 <template>
   <div class="Page_content">
-    <!-- <q-page class="flex flex-center"> -->
 
     <!-- Carousel -->
     <Carousel></Carousel>
@@ -17,7 +16,6 @@
     />
     </div>
 
-    <!-- </q-page> -->
   </div>
 </template>
 

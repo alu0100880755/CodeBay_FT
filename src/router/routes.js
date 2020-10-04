@@ -4,12 +4,17 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '/', redirect: '/home' },
+      { path: '/home', component: () => import('pages/Index.vue') },
+      { path: '/event', component: () => import('pages/Index.vue') },
+      { path: '/accesories', component: () => import('pages/Index.vue') },
+      { path: '/apparel', component: () => import('pages/Index.vue') },
+      { path: '/featured', component: () => import('pages/Index.vue') },
+      { path: '/support', component: () => import('pages/Index.vue') },
+      { path: '/contact', component: () => import('pages/Index.vue') }
     ]
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '*',
     component: () => import('pages/Error404.vue')

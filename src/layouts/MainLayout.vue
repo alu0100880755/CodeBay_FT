@@ -41,7 +41,12 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <!-- Navigation section -->
+    <br/><br/>
+    <Navigation/>
+
+    <!-- Web section -->
+    <q-page-container class="page">
       <router-view />
     </q-page-container>
 
@@ -55,6 +60,7 @@
 import EssentialLink from 'components/EssentialLink.vue'
 import Footer from 'components/Layout/Footer'
 import Language from 'components/Layout/Language'
+import Navigation from 'components/Layout/Navigation'
 
 const linksData = [
   {
@@ -103,7 +109,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink, Footer, Language },
+  components: { EssentialLink, Footer, Language, Navigation },
   data () {
     return {
       leftDrawerOpen: false,
@@ -112,3 +118,11 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.page{
+  margin-top: -2%;
+}
+
+</style>
