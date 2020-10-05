@@ -16,7 +16,7 @@
         <!-- Item name section -->
         <q-card-section vertical class="item_name text-center">
           <div class="text-h6">{{ item_name }}</div>
-          <div class="text-subtitle2">{{ item_category }}</div>
+          <div class="text-subtitle2">{{ $t(item_category) }}</div>
         </q-card-section>
 
         <!-- Item price section -->

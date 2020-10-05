@@ -58,14 +58,14 @@ export default {
           item_image:
             'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFROUOGAt6R58jU0JUVDpN7WfEEClI78b4ZozLHZYbnRnNueVPF2U&usqp=CAc',
           item_name: 'Samsung Note 20',
-          item_category: this.$t('mobile'),
+          item_category: 'mobile',
           item_price: 1200
         },
         {
           item_image:
             'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSiaq-L2RIIZmZQJZ1fn6wydkO3W_wElzStKFsX8lAFJfliC59reA8&usqp=CAc',
           item_name: 'Apple Iphone 11',
-          item_category: this.$t('mobile'),
+          item_category: 'mobile',
           item_price: 1300
         }
       ]
