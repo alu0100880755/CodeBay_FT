@@ -1,6 +1,12 @@
 
 export default {
   language: 'Idioma',
+  cart: 'Mi carrito',
+  units: 'Unidades: ',
+  payment: 'Pago total: ',
+  pay: 'REALIZAR PEDIDO',
+  loading: 'CARGANDO ...',
+  account: 'Mi cuenta',
   accesories: 'Accesorios',
   apparel: 'Ropa',
   featured: 'Elementos destacados',
@@ -10,7 +16,7 @@ export default {
   mobile: 'Teléfono móvil',
   quick_links: 'Enlaces rápidos',
   home: 'Inicio',
-  event: 'Evento',
+  event: 'Eventos',
   support: 'Ayuda',
   contact: 'Contacto',
   promoted: 'Anuncios / Contenido promocionado',

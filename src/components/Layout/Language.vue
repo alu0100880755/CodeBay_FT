@@ -1,5 +1,7 @@
 <template>
   <div class="language">
+
+    <!-- External design for language selector -->
     <q-select
       v-model="lang"
       :options="langOptions"
@@ -9,8 +11,15 @@
       emit-value
       map-options
       options-dense
-      style="min-width: 150px"
-    />
+      style="min-width: 105%"
+    >
+
+      <!-- Language icon -->
+      <template v-slot:before>
+        <q-icon name="language" />
+      </template>
+
+    </q-select>
   </div>
 </template>
 
@@ -35,10 +44,8 @@ export default {
 </script>
 
 <style>
-
-.language{
+.language {
   color: white;
   font-weight: bold;
 }
-
 </style>

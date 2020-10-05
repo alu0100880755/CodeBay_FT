@@ -19,7 +19,7 @@
       </q-card-section>
 
       <q-card-section vertical class="q-pt-none">
-        {{ item_price }}
+        {{ item_price }} {{ $t('coin') }}
       </q-card-section>
 
     </q-card>
