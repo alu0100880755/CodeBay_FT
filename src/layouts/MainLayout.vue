@@ -6,6 +6,8 @@
       <!-- Language selector -->
       <Language/>
       <q-space/>
+
+      <!-- Nightmode selector -->
       <NightMode/>
       <q-space/>
 

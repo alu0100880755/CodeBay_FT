@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <q-toolbar class="bg-white text-black shadow-2">
+    <q-toolbar class="shadow-2">
       <q-btn flat label="CodeBay" />
       <q-space />
 
@@ -40,7 +40,9 @@ export default {
     }
   },
   updated () {
-    this.$router.push(this.transformModel(this.model))
+    if (this.$q.platform.is.mobile) {
+      this.$router.push(this.transformModel(this.model))
+    }
   },
   methods: {
     transformModel (model) {
