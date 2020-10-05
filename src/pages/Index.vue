@@ -11,7 +11,7 @@
     <div class="row">
     <Item
       v-for="item in available_items"
-      :key="item.item_name"
+      :key="item.item_name || $i18n.locale"
       v-bind="item"
     />
     </div>

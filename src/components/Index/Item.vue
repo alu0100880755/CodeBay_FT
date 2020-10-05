@@ -1,7 +1,7 @@
 <template>
 
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-left">
-  <q-card class="my-card">
+  <q-card class="my-card-item">
 
     <!-- Item image section -->
     <q-card-section vertical>
@@ -67,12 +67,13 @@ export default {
 </script>
 
 <style>
-.my-card {
+.my-card-item {
   overflow: auto;
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 6%;
   margin-bottom: 6%;
+  transition: 2s;
 }
 
 .item_image {
@@ -83,5 +84,8 @@ export default {
   margin-bottom: auto;
   max-width: 100%;
   max-height: 100%;
+
 }
+
+.my-card-item:hover {opacity: 0.65; zoom: 0.95;}
 </style>
