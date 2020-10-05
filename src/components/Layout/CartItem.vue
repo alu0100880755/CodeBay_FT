@@ -14,18 +14,18 @@
         </q-card-section>
 
         <!-- Item name section -->
-        <q-card-section vertical class="text-center">
+        <q-card-section vertical class="item_name text-center">
           <div class="text-h6">{{ item_name }}</div>
           <div class="text-subtitle2">{{ item_category }}</div>
         </q-card-section>
 
         <!-- Item price section -->
-        <q-card-section vertical class="text-center">
+        <q-card-section vertical class="item_price text-center">
           {{ item_price }} {{ $t('coin') }}
         </q-card-section>
 
         <!-- Delete items section -->
-        <q-btn flat color="primary" icon="close" @click="deleteItem"/>
+        <q-btn class="item_delete" flat color="primary" icon="close" @click="deleteItem"/>
 
       </q-card-section>
     </q-card>
@@ -72,9 +72,23 @@ export default {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   max-width:100%;
   max-height:100%;
+}
+
+.item_price{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.item_name{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 </style>
