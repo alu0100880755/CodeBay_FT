@@ -54,7 +54,7 @@ export default {
         },
         {
           item_image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRPfXGd1o0kSNyLnqiFMNcMKD9_gbpGZj1GGcxeJNbfHIHo8DxgPmQ&usqp=CAc',
-          item_name: 'Oneplus 8',
+          item_name: 'Oneplus 8 Pro',
           item_category: 'mobile',
           item_price: 899
         }

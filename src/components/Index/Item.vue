@@ -9,8 +9,7 @@
       :src="item_image"
       class="col-3 col-sm-3 item_image"
       spinner-color="white"
-      ratio="4/3"
-      :height="height_device + unit"
+
     />
     </q-card-section>
 
@@ -35,8 +34,6 @@ export default {
   name: 'Item',
   data () {
     return {
-      height_device: 55,
-      unit: 'vh'
     }
   },
   // Child props for card
@@ -59,9 +56,6 @@ export default {
     }
   },
   mounted () {
-    if (this.$q.platform.is.mobile) {
-      this.height_device = 25
-    }
   }
 }
 </script>
@@ -82,9 +76,12 @@ export default {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  max-width: 100%;
-  max-height: 100%;
-
+  min-width: 12vh;
+  width: 12vh;
+  max-width: 55vh;
+  max-height: 40vh;
+  height: 16vh;
+  min-height: 16vh;
 }
 
 .my-card-item:hover {opacity: 0.65; zoom: 0.95;}
