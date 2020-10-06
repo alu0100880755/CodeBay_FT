@@ -70,6 +70,15 @@ export default {
   transition: 2s;
 }
 
+.item_name{
+  overflow: auto;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  transition: 2s;
+}
+
 .item_image {
   display: block;
   margin-left: auto;
