@@ -39,6 +39,14 @@ export default {
       ]
     }
   },
+  watch: {
+    '$i18n.locale' (val) {
+      if (this.$q.platform.is.mobile) {
+        this.model = this.$t(this.$route.path.slice(1))
+        this.tabs = [this.$t('home'), this.$t('event'), this.$t('accesories'), this.$t('apparel'), this.$t('featured')]
+      }
+    }
+  },
   updated () {
     if (this.$q.platform.is.mobile) {
       this.$router.push(this.transformModel(this.model))
